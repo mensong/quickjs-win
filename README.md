@@ -21,7 +21,7 @@ The main documentation is in doc/quickjs.pdf or [doc/quickjs.html](doc/quickjs.h
 
 # Build using Microsoft Visual Studio (2017 or 2019)
 
-Prerequisite: **premake5** - [download](https://premake.github.io/download.html) and install it.
+Prerequisite: **premake5** - [download](https://premake.github.io/download.html) and install it.(included in root dir)
 
 Then go to /win folder and run premake-vs2017.bat or premake-vs2019.bat . 
 
