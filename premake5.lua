@@ -21,6 +21,11 @@ newoption {
    description = "Will add persistent storage support"
 }
 
+newoption {
+   trigger     = "jsdebugger",
+   description = "Will add js debugger support"
+}
+
 workspace "quickjs"
 	-- Premake output folder
 	location(path.join(".build", _ACTION))
@@ -36,6 +41,10 @@ workspace "quickjs"
 
   if _OPTIONS["storage"] then 
     defines { "CONFIG_STORAGE" } -- persistent storage support
+  end
+  
+  if _OPTIONS["jsdebugger"] then 
+    defines { "CONFIG_DEBUGGER" } -- js debugger support
   end
 
 
